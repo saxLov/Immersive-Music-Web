@@ -16,7 +16,7 @@
 5. 构建专属于自己的赛博音乐室
 
 ### 🎬 实机演示
-
+点击图片跳转到 B 站观看演示
 [![点击跳转到 B 站观看超清演示](./assets/Example.png)](https://www.bilibili.com/video/BV1y4xE6oEiK)
 ---
 
