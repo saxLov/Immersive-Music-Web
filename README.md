@@ -1,4 +1,3 @@
-````markdown
 # 🎵 沉浸式滚动音乐网页
 ## Immersive Scroll Music Engine
 
@@ -23,7 +22,7 @@
 
 ```text
 MusicWebDemo/
-├── index.html       
+├── index.html
 ├── README.md               ← 使用说明
 ├── OriginalSound/
 │   ├── 1.mp3
@@ -55,29 +54,34 @@ MusicWebDemo/
 > 本教程统一修改 `index.html`。请确认浏览器打开的也是这个文件，避免修改了一份、查看的却是另一份。
 
 ---
+
 文件结构样例展示:
+
 **1. 根目录概览**
+
 展示了 `index.html`、`README.md` 以及所有核心素材文件夹的分布位置。
 
 ![img](./assets/pre_step1.png)
 
 **2. 音频文件夹 (OriginalSound)**
+
 所有 `.mp3` 音频文件都需放置于此，并在代码中对应引用。
 
 ![img](./assets/pre_step5.png)
 
 **3. 歌词文件夹 (OriginalLyrics)**
+
 存放与音频同名的 `.lrc` 歌词文件，用于实现动态歌词滚动。
 
 ![img](./assets/pre_step4.png)
 
 **4. 图片文件夹 (Image169 & ImageCD11)**
+
 分别存放 16:9 的背景图和 1:1 的 CD 封面图。
 
 ![img](./assets/pre_step2.png)
 
 ![img](./assets/pre_step3.png)
-
 
 ## 🚀 第一次运行
 
@@ -91,7 +95,6 @@ MusicWebDemo/
 在 VS Code 左侧打开扩展面板，搜索 `Live Server` 并安装。
 
 ![img](./assets/step1.png)
-
 
 ### 2. 打开项目
 
@@ -136,7 +139,6 @@ Open with Live Server
 打开后会显示歌词暂不可用
 
 ![img](./assets/step5.png)
-
 
 ### 4. 记住这三个操作
 
@@ -186,6 +188,7 @@ Ctrl + F
 ```javascript
 const siteConfig
 ```
+
 示例：
 Ctrl + F后右上角会有搜索框，下图有展示，输入了const siteConfig
 
@@ -214,7 +217,6 @@ description: "这里收藏着我喜欢的音乐。",
 | `description` | 网页描述，不是页面中的可见标题 |
 
 `{count}` 会自动变成歌单里的歌曲数量。
-
 
 **保留 `{count}`，不需要手动把它改成 2。**
 
@@ -286,7 +288,6 @@ instrumental: "没有歌词，也有故事",
 
 部分提示会在滚动后隐藏，手机窄屏也会隐藏部分装饰标签。查看完整效果时，请使用桌面宽度的浏览器窗口，并回到页面顶部。
 
-
 以下是修改样例:
 修改title-language部分,修改之前的代码和样例图:
 
@@ -299,7 +300,6 @@ instrumental: "没有歌词，也有故事",
 ![img](./assets/step8.png)
 
 ![img](./assets/step9.png)
-
 
 ## 🎵 模块二：添加第二首歌
 
@@ -314,6 +314,7 @@ instrumental: "没有歌词，也有故事",
 ```javascript
 const songs
 ```
+
 示例:
 
 ![img](./assets/step11.png)
@@ -356,6 +357,7 @@ const songs
         bg: "./Image169/bg2.jpg"
     },
 ```
+
 粘贴完应该是这样的：
 
 ![img](./assets/step10.png)
@@ -392,12 +394,12 @@ const songs = [
     },
 ];
 ```
+
 完成后刷新网页,滚动鼠标可以看见第二首歌,如图:
 
 ![img](./assets/step12.png)
 
 ![img](./assets/step13.png)
-
 
 如果第一首的名称已经改好了，就保留自己的文字，不必改回示例名称。
 
@@ -433,7 +435,6 @@ audio: "./OriginalSound/2.mp3",
 5. 点击第二首唱片，检查音频是否能播放。
 
 页面高度、歌曲导航和总数会自动更新。
-
 
 ## ➖ 模块三：删除第二首歌(不做图片展示,删除之前加入的歌曲信息代码即可)
 
@@ -481,8 +482,6 @@ audio: "./OriginalSound/2.mp3",
 
 删除配置不会删除电脑上的素材文件。第二首的 `2.mp3`、`2.lrc` 等文件仍然保留，以后还可以重新添加。
 
-
-
 ## 🔧 补充：修改歌曲、调整顺序和继续加歌
 
 ### 修改歌名和歌手
@@ -493,6 +492,7 @@ audio: "./OriginalSound/2.mp3",
 title: "你喜欢的歌名",
 artist: "歌手名字",
 ```
+
 Ctrl + F 搜索const songs定位到歌曲数组,在里面修改以上内容
 网页不依赖 MP3 内部的 ID3 标签。
 
@@ -544,7 +544,6 @@ instrumental: true,
 
 ---
 
-
 ## 🎹 模块四：进阶玩法二——按 E 键慢慢滑到下一首
 
 这个功能是可选的。
@@ -568,9 +567,6 @@ instrumental: true,
 ```html
 </body>
 ```
-示例:
-
-![img](./assets/step14.png)
 
 把下面的新脚本放在 `</body>` 前面，而且要放在原来的主脚本之后。
 
@@ -585,6 +581,7 @@ instrumental: true,
 </body>
 </html>
 ```
+
 示例:
 
 ![img](./assets/step14.png)
@@ -730,6 +727,7 @@ instrumental: true,
 })();
 </script>
 ```
+
 粘贴完后应该是这样的:
 
 ![img](./assets/step15.png)
@@ -793,7 +791,6 @@ const duration = 5000;
 删除刚才新增的整个 `<script>...</script>` 块，保存刷新即可。
 
 不要删除原来的主脚本。
-
 
 ## ⚙️ 其他常用设置
 
@@ -936,10 +933,8 @@ LRC 时间戳格式示例：
 
 ---
 
-
 ## ⚠️ 关于开源与素材版权
 
 代码框架与歌曲素材是两回事。
 
 本地演示文件夹中准备的音频、歌词、封面和背景图，并不代表它们可以自由上传、转载或公开分发。
-
