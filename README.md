@@ -16,7 +16,7 @@
 5. 构建专属于自己的赛博音乐室
 
 成品演示:
-![img](./assets/example.png)
+![img](./assets/Example.png)
 ---
 
 ## 📁 先认识项目文件夹
