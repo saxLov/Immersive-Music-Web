@@ -15,8 +15,9 @@
 4. 添加“按 E 键缓慢滚到下一首”的功能。
 5. 构建专属于自己的赛博音乐室
 
-成品演示:
-![img](./assets/Example.png)
+### 🎬 实机演示
+
+[![点击跳转到 B 站观看超清演示](./assets/Example.png)](https://www.bilibili.com/video/BV1y4xE6oEiK)
 ---
 
 ## 📁 先认识项目文件夹
