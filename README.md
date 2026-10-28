@@ -58,16 +58,24 @@ MusicWebDemo/
 文件结构样例展示:
 **1. 根目录概览**
 展示了 `index.html`、`README.md` 以及所有核心素材文件夹的分布位置。
+
 ![img](./assets/pre_step1.png)
+
 **2. 音频文件夹 (OriginalSound)**
 所有 `.mp3` 音频文件都需放置于此，并在代码中对应引用。
+
 ![img](./assets/pre_step5.png)
+
 **3. 歌词文件夹 (OriginalLyrics)**
 存放与音频同名的 `.lrc` 歌词文件，用于实现动态歌词滚动。
+
 ![img](./assets/pre_step4.png)
+
 **4. 图片文件夹 (Image169 & ImageCD11)**
 分别存放 16:9 的背景图和 1:1 的 CD 封面图。
+
 ![img](./assets/pre_step2.png)
+
 ![img](./assets/pre_step3.png)
 
 
@@ -81,13 +89,17 @@ MusicWebDemo/
 - VS Code 扩展：Live Server。
 
 在 VS Code 左侧打开扩展面板，搜索 `Live Server` 并安装。
+
 ![img](./assets/step1.png)
+
 
 ### 2. 打开项目
 
 1. 打开 VS Code。
 2. 点击“文件 → 打开文件夹”。
+
 ![img](./assets/step2.png)
+
 3. 选择 `MusicWebDemo` 文件夹。
 4. 在左侧点击 `index.html`。
 
@@ -106,6 +118,7 @@ D:\AI\MusicWebDemo
 ```text
 Open with Live Server
 ```
+
 ![img](./assets/step3.png)
 
 浏览器打开后，点击唱片或播放按钮开始播放。
@@ -117,9 +130,13 @@ Open with Live Server
 正确做法：在 VS Code 中右键点击 index.html，选择 Open with Live Server。
 (原因：网页需要通过服务器环境去动态读取本地的 .lrc 歌词文件。)
 错误做法示例：
+
 ![img](./assets/step4.png)
+
 打开后会显示歌词暂不可用
+
 ![img](./assets/step5.png)
+
 
 ### 4. 记住这三个操作
 
@@ -171,6 +188,7 @@ const siteConfig
 ```
 示例：
 Ctrl + F后右上角会有搜索框，下图有展示，输入了const siteConfig
+
 ![img](./assets/step6.png)
 
 ### 第二步：修改网页主标题、副标题和提示语
@@ -271,10 +289,15 @@ instrumental: "没有歌词，也有故事",
 
 以下是修改样例:
 修改title-language部分,修改之前的代码和样例图:
+
 ![img](./assets/step6.png)
+
 ![img](./assets/step7.png)
+
 修改之后的代码和样例图:
+
 ![img](./assets/step8.png)
+
 ![img](./assets/step9.png)
 
 
@@ -292,7 +315,9 @@ instrumental: "没有歌词，也有故事",
 const songs
 ```
 示例:
+
 ![img](./assets/step11.png)
+
 你会看到一个数组。
 
 可以把它理解成一张歌曲清单：
@@ -332,7 +357,9 @@ const songs
     },
 ```
 粘贴完应该是这样的：
+
 ![img](./assets/step10.png)
+
 上面的素材路径对应项目中已经准备的第二套文件。
 
 把 `title` 和 `artist` 改成你希望显示的歌名、歌手。
@@ -366,7 +393,9 @@ const songs = [
 ];
 ```
 完成后刷新网页,滚动鼠标可以看见第二首歌,如图:
+
 ![img](./assets/step12.png)
+
 ![img](./assets/step13.png)
 
 
@@ -540,7 +569,9 @@ instrumental: true,
 </body>
 ```
 示例:
+
 ![img](./assets/step14.png)
+
 把下面的新脚本放在 `</body>` 前面，而且要放在原来的主脚本之后。
 
 位置示意：
@@ -555,6 +586,7 @@ instrumental: true,
 </html>
 ```
 示例:
+
 ![img](./assets/step14.png)
 
 不要把新的 `<script>` 标签粘进原来的 `<script>` 内部。
@@ -699,7 +731,9 @@ instrumental: true,
 </script>
 ```
 粘贴完后应该是这样的:
+
 ![img](./assets/step15.png)
+
 这段脚本使用当前页面已有的 `window.musicEngine` 接口。
 
 只添加一次。如果已经添加过 E 键扩展，请替换旧扩展，不要重复粘贴。
